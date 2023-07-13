@@ -1,0 +1,33 @@
+.hidden {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-btn-wrapper {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  position: relative;
+  border-radius: 1.4rem;
+  background-color: rgb(17 24 39);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta-text {
+  color: #e9f1ff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.cta-btn-wrapper:hover {
+  transform: scale(1.2);
+}
