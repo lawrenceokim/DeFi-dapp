@@ -29,6 +29,7 @@ body {
   width: 100vw;
   background-color: #e9f1ff;
   overflow-y: scroll;
+  position: relative;
 }
 .header {
   width: 100%;
@@ -232,11 +233,12 @@ body {
   margin-right: 0.125rem;
 }
 .description-wrapper_digits {
-  display: inline-block;
-  display: inline;
+  display: flex;
   position: relative;
-  vertical-align: middle;
-  vertical-align: auto;
+  height: 2.3rem;
+  align-items: center;
+  /* vertical-align: auto; */
+  justify-content: center;
   letter-spacing: 0.1rem;
 }
 .hero-img {
@@ -255,7 +257,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25.6rem;
+  height: 20rem;
 }
 .slides-container {
   max-width: 1690px;
@@ -268,13 +270,36 @@ body {
   overflow: hidden;
 }
 .slides-wrapper_settings {
-  animation-iteration-count: infinite;
-  animation-name: _horizontalAnimation_1htck_1;
+  animation-name: sliding-x;
   animation-timing-function: linear;
   display: flex;
-  animation-duration: 15000ms;
+  animation-duration: 15s;
   animation-direction: normal;
   animation-play-state: running;
   height: auto;
   width: 1691px;
+  animation-iteration-count: infinite;
+}
+@keyframes sliding-x {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+.content {
+  margin-right: 6rem;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+  column-gap: 1.6rem;
+}
+.content img {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  width: 3.6rem;
 }
