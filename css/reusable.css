@@ -17,17 +17,23 @@
   background-color: rgb(17 24 39);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  height: 3rem;
   transition-duration: 0.15s;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cta-text {
   color: #e9f1ff;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 .cta-btn-wrapper:hover {
   transform: scale(1.2);
+}
+.page-padding {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
