@@ -1,3 +1,24 @@
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
 .hidden {
   display: none;
 }
@@ -23,6 +44,9 @@
   transition-duration: 0.15s;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta-btn-wrapper:link {
+  text-decoration: none;
 }
 .cta-text {
   color: #e9f1ff;
