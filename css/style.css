@@ -417,10 +417,145 @@ body {
 }
 
 /************************ CARD SECTION */
-.animatedSvg-section {
+.sectioning-card {
   display: flex;
   align-items: center;
   padding-top: 10rem;
   flex-direction: column;
   width: 100%;
+}
+.animated-title {
+  max-width: 85.9rem;
+  margin-bottom: 1.6rem;
+  line-height: 5.6rem;
+  font-size: 4rem;
+  text-align: center;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/************************ CARD SECTION */
+.verticalSlides-wrapper {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #f8fafc;
+  border-radius: 4rem;
+  column-gap: 0;
+  height: 50rem;
+  overflow-y: hidden;
+}
+.wrapper-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+.wrapper-left h2 {
+  text-align: left;
+  font-size: 5.2rem;
+  line-height: 8rem;
+  width: 91.5%;
+  color: #0f172a;
+  letter-spacing: 0.06rem;
+  font-weight: 500;
+}
+.wrapper-left p {
+  text-align: left;
+  width: 91.5%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 3rem;
+  letter-spacing: 0.16rem;
+}
+
+.wrapper-right {
+  display: flex;
+  width: 58.333333%;
+  column-gap: 3rem;
+  margin-top: 0;
+  justify-content: center;
+}
+.slide-width {
+  width: 33.3%;
+}
+.slide-div {
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  overflow: hidden;
+}
+.slideContent-animateSetting {
+  animation-iteration-count: infinite;
+  animation-name: verticalAnimation;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-play-state: running;
+  width: auto;
+}
+
+@keyframes verticalAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.middle {
+  animation-iteration-count: infinite;
+  animation-name: verticalAnimationReversed;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-play-state: inherit;
+  width: auto;
+}
+
+@keyframes verticalAnimationReversed {
+  0% {
+    transform: translateY(-90%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.slideContent {
+  margin-bottom: 3rem;
+  min-height: 10rem;
+  max-width: 18rem;
+  padding: 4rem 1rem 1rem 1rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slideContent img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 10rem;
+  height: 10rem;
+}
+.slideContent span {
+  font-size: 1.2rem;
+  width: 14.8rem;
+  margin-top: 2.5rem;
+  color: #0f172a;
+  text-align: center;
+  padding: 1rem 1.6rem;
+  background-color: #f1f5f9;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
