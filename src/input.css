@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --bg-color: #e9f1ff;
@@ -492,7 +495,7 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-direction: normal;
   animation-play-state: running;
   width: auto;
@@ -514,7 +517,7 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-direction: normal;
   animation-play-state: inherit;
   width: auto;
@@ -558,4 +561,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/************************ VOTINGCHAIN SECTION */
+.votingChain-section {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,23 @@
+{
+  "name": "instadapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrenceokim/DeFi-dapp.git"
+  },
+  "author": "lawrenceokim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawrenceokim/DeFi-dapp/issues"
+  },
+  "homepage": "https://github.com/lawrenceokim/DeFi-dapp#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
