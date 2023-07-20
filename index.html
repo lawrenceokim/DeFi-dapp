@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/reusable.css">
   <link rel="stylesheet" href="/dist/output.css">
   <script src="https://kit.fontawesome.com/b9368fee6f.js" crossorigin="anonymous"></script>
   <title>instadapp</title>
@@ -12,10 +11,12 @@
 
 <body>
 
-  <header class="header">
-    <div class="header-items margin-auto">
-      <div class="header-items-left">
-        <div class="menu-wrapper">
+  <header class=" header w-full sticky top-0 dark:bg-gray-850 bg-gray-150 z-[9]">
+    <div
+      class="w-full max-w-screen-2xl mx-auto sm:px-[80px] p-5 sm:pr-[160px] sm:py-[18px] flex justify-between items-center dark:bg-gray-850 bg-gray-150 relative z-50">
+      <div
+        class="w-full sm:w-auto flex sm:flex-row flex-row-reverse items-center justify-between gap-x-[38px] relative">
+        <div class="flex flex-row-reverse gap-x-5">
           <div>
             <button type="button" class="button-container cursor">
               <div class="button-wrapper">
@@ -29,47 +30,57 @@
           </div>
           <div class="menu-dropdown hidden"></div>
         </div>
-        <div class="header-left_next">
+        <div class="flex items-center gap-x-7 z-50">
           <img src="/img/logo-philips.png" alt="logo" class="logo">
           <button class="switch-color-mode cursor"><ion-icon name="moon-outline" class="daylight"></ion-icon></button>
         </div>
       </div>
-      <nav class="nav-container">
-        <a class="nav-link cursor">
-          <span class="text">Avocado</span>
+      <nav class="sm:flex hidden items-center gap-x-9">
+        <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer">
+          <span class="text-base leading-5 transition-all">Avocado</span>
         </a>
-        <a class="nav-link cursor"><span class="text">Instadapp Lite</span></a>
-        <a class="nav-link cursor"><span class="text">Instadapp PRO</span></a>
+        <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer"><span
+            class="text-base leading-5 transition-all">Instadapp Lite</span></a>
+        <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer"><span
+            class="text-base leading-5 transition-all">Instadapp PRO</span></a>
       </nav>
-      <a class="cta-btn-wrapper cursor">
-        <span class="cta-text">View Apps</span>
+      <a
+        class="router-link-active router-link-exact-active px-6 py-3 rounded-[14px] relative dark:bg-white dark:text-slate-900 bg-gray-900 text-white text-base sm:flex hidden leading-5 cursor-pointer transition-transform dark:hover:scale-110 hover:scale-110 z-50">
+        View Apps
       </a>
     </div>
   </header>
 
-  <main class="main margin-auto">
-    <section class="section-hero page-padding">
-      <div class="hero-text_wrapper">
-        <h1 class="hero-title">Everything DeFi</h1>
-        <p class="hero-description">Unlock the full potential of DeFi with Instadapp. The ultimate hub for
-          Everythingweb3. Simplify your DeFi journey and enjoy a safer, more accessible experience.</p>
+  <main class="w-full max-w-screen-xl mx-auto sm:px-10 px-5 flex-1">
+
+    <section class="w-full sm:mt-10 mt-[50px] flex sm:flex-row flex-col">
+      <div class="sm:w-7/12 w-full flex flex-col justify-center">
+        <h1
+          class="sm:text-[70px] tracking-[0.7px] text-4xl sm:leading-[90px] leading-[50px] font-medium text-slate-900  text-center sm:text-left">
+          Everything DeFi</h1>
+        <p
+          class="mt-6 tracking-[0.2px] sm:text-xl text-sm sm:text-left text-center sm:leading-[34px] leading-[30px] text-slate-900 ">
+          Unlock the full potential of DeFi with Instadapp. The ultimate hub for
+          Everything web3. Simplify your DeFi journey and enjoy a safer, more accessible experience.</p>
         <div class="cta-container">
-          <a class="cta-btn-wrapper cursor">
-            <span class="cta-text margin-auto">Learn More</span>
+          <a
+            class="h-[44px] sm:w-fit w-full py-3 px-6 rounded-[14px] bg-gray-900 dark:bg-white flex items-center hover:scale-[1.10] transition-all cursor-pointer">
+            <span class="sm:text-base text-sm leading-5 mx-auto text-white dark:text-slate-900">Learn More</span>
           </a>
-          <div class="hero-figures-container">
-            <span class="figures-heading">TVL</span>
-            <span class="figures-description">
-              <div class="description_wrapper">
-                <span class="description-wrapper_sign">$</span>
-                <span class="description-wrapper_digits">2,021,768,818</span>
+          <div
+            class="h-[44px] py-3 pl-6 pr-2.5 rounded-[40px] bg-white dark:bg-gray-855 flex gap-x-[14px] justify-center items-center">
+            <span class="text-base leading-5 text-slate-400">TVL</span>
+            <span class="py-[6px] px-[11px] rounded-[20px] bg-slate-100   text-base leading-5">
+              <div class="inline-flex items-center leading-6">
+                <span class="mb-px mr-0.5">$</span>
+                <span class="odometer odometer-auto-theme">2,021,768,818</span>
               </div>
             </span>
           </div>
         </div>
       </div>
-      <div class="hero-img">
-        <img src="/img/hero-card-light.webp" alt="hero card light">
+      <div class="w-1/2 hidden sm:flex">
+        <img src="/img/hero-card-light.webp" alt="hero card light" class="h-[600px]">
       </div>
     </section>
 
@@ -210,141 +221,196 @@
         </div>
       </div>
     </section>
-    <section class="features-card-section">
-      <div class="card-1">
-        <div class="card-1_divLeft">
-          <div class="card-1_divLeft-titleContainer">
-            <div class="titleContainer-logoDiv">
-              <img src="/img/KYLUC DELIGHT logo-white.png" class="logoDiv-logo" alt="website logo">
+
+    <section class="w-full flex flex-col gap-y-[40px] scroll-mt-24">
+      <div
+        class="w-full sm:px-10 px-5 sm:py-10 py-5 pt-[30px] sm:pt-10 flex sm:flex-row flex-col rounded-[40px] bg-green-500">
+        <div class="sm:w-1/2 w-full flex flex-col">
+          <div class="flex flex-col sm:flex-row gap-x-[15px] items-center">
+            <div class="sm:w-[200px] sm:h-[100px] w-[90px] h-[90px]">
+              <img src="/img/KYLUC DELIGHT logo-white.png" class="sm:flex hidden" alt="website logo">
             </div>
-            <h2 class="titleContainer-heading">Avocado: One wallet for all web3</h2>
+            <h2
+              class="sm:mt-0 mt-4 sm:text-[40px] tracking-[0.4px] text-3xl sm:leading-[48px] leading-[40px] text-white font-medium text-center sm:text-left">
+              Avocado: One wallet for all web3</h2>
           </div>
-          <p class="divLeft-description">
+          <p
+            class="sm:mt-[26px] tracking-[0.16px] mt-4 sm:text-base text-sm sm:leading-[30px] text-white sm:text-left text-center">
             Avocado superwallet streamlines Web3. Top up USDC gas tank and easily interact on any network. Simplify gas
             management
             and focus on getting things done.
           </p>
-          <div class="divLeft-ctaContainer">
-            <a href="#" class="cta-btn-wrapper cardWrapper">
-              <span class="cta-text cardText">Learn More</span>
+          <div class="sm:mt-10 mt-[30px] flex sm:gap-x-[20px] gap-x-4">
+            <a href="#"
+              class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
+              <span class="sm:text-base text-sm text-slate-900 leading-5">Learn More</span>
             </a>
-            <a href="#" class="cta-btn-wrapper cardWrapper-2">
-              <span class="cta-text">Go to App</span>
-              <ion-icon name="arrow-redo-outline" class="cardWrapper-2-icon"></ion-icon>
+            <a href="#"
+              class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white/20 rounded-[14px] hover:scale-110 transition-all">
+              <span class="sm:text-base text-sm text-white leading-5">Go to App</span>
+              <ion-icon name="arrow-redo-outline" class="text-white"></ion-icon>
             </a>
           </div>
         </div>
-        <div class="card-1_divRight">
-          <div style="position: relative;">
-            <video src="https://instadapp.io/video/avocado.mp4" class="divRight-video"></video>
-            <div class="videoDiv">
-              <button class="videoDiv-btn_container">
-                <span class="videoDiv-icon"><ion-icon name="logo-youtube" class="youtube-icon"></ion-icon></span>
-                <span class="videoDiv-text">Watch the video</span>
+        <div class="sm:w-1/2 w-full sm:ml-[60px] ml-0 mt-[30px] sm:mt-[0px] flex flex-col items-end">
+          <div class="relative">
+            <video class="rounded-[30px] w-full sm:h-[273px] bg-gray-855">
+              <source src="https://instadapp.io/video/avocado.mp4" type="video/mp4">
+            </video>
+            <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+              <button
+                class="px-[28px] py-[13px] rounded-[50px] flex items-center gap-x-[20px] bg-slate-300/30 dark:bg-white/30 relative group">
+                <span
+                  class="sm:w-[52px] w-[30px] sm:h-[36px] h-[20px] bg-red-550 rounded-full flex items-center justify-center group-hover:scale-110 transition-all"><ion-icon
+                    name="logo-youtube"
+                    class="group-hover:scale-110 transition-all sm:flex hidden text-4xl fill-red-600 "></ion-icon></span>
+                <span class="sm:text-2xl text-sm text-slate-900 dark:text-white sm:leading-[30px] leading-5">Watch the
+                  video</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="features-card-2">
-        <div class="card-1_divLeft w-full padding-all card-2">
-          <div class="card-1_divLeft-titleContainer">
-            <div class="titleContainer-logoDiv">
-              <img src="/img/KYLUC DELIGHT logo-white.png" class="logoDiv-logo" alt="website logo">
+      <div class="w-full flex sm:flex-row flex-col sm:gap-x-[40px] gap-y-[40px]">
+        <div
+          class="sm:w-1/2 w-full sm:p-10 sm:pt-10 pt-[30px] sm:px-10 px-5 pb-5 sm:pb-10 flex flex-col bg-blue-700 rounded-[40px]">
+          <div class="flex flex-col sm:flex-row gap-x-[26px] items-center">
+            <div class="sm:w-[100px] sm:h-[100px] w-[90px] h-[90px]">
+              <img src="/img/KYLUC DELIGHT logo-white.png" class="sm:flex" alt="website logo">
             </div>
-            <h2 class="titleContainer-heading">Instadapp <br /> Pro</h2>
+
+            <h2
+              class="sm:mt-0 mt-4 sm:text-[40px] text-3xl sm:leading-[48px] leading-[40px] tracking-wide text-white font-medium text-center sm:text-left">
+              Instadapp <br /> Pro</h2>
           </div>
-          <p class="divLeft-description">
+          <p
+            class="sm:mt-5 mt-4 sm:text-base text-sm tracking-[0.16px] sm:leading-[30px] text-white text-center sm:text-left">
             Avocado superwallet streamlines Web3. Top up USDC gas tank and easily interact on any network. Simplify
             gas
             management
             and focus on getting things done.
           </p>
-          <div class="divLeft-ctaContainer">
-            <a href="#" class="cta-btn-wrapper cardWrapper">
-              <span class="cta-text cardText">Learn More</span>
+          <div class="sm:mt-10 mt-[30px] flex sm:gap-x-[20px] gap-x-4">
+            <a href="#"
+              class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
+              <span class="sm:text-base text-sm text-slate-900 leading-[20px]">Learn More</span>
             </a>
-            <a href="#" class="cta-btn-wrapper cardWrapper-2">
-              <span class="cta-text">Go to App</span>
-              <ion-icon name="arrow-redo-outline" class="cardWrapper-2-icon"></ion-icon>
+            <a href="#"
+              class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white/20 rounded-[14px] hover:scale-110 transition-all">
+              <span class="sm:text-base text-sm text-white leading-[20px]">Go to App</span>
+              <ion-icon name="arrow-redo-outline" class="text-white"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div
+          class="sm:w-1/2 w-full sm:p-10 sm:pt-10 pt-[30px] sm:px-10 px-5 pb-5 sm:pb-10 flex flex-col bg-white rounded-[40px]">
+          <div class="flex flex-col sm:flex-row gap-x-[26px] items-center">
+            <div class="sm:w-[100px] sm:h-[100px] w-[90px] h-[90px]">
+              <img src="/img/KYLUC DELIGHT logo.png" class="sm:flex" alt="website logo">
+            </div>
+
+            <h2
+              class="sm:mt-0 mt-4 sm:text-[40px] text-3xl sm:leading-[48px] leading-[40px] tracking-wide text-slate-900 font-medium text-center sm:text-left">
+              Instadapp <br /> Pro</h2>
+          </div>
+          <p
+            class="sm:mt-5 mt-4 sm:text-base text-sm sm:leading-[30px] text-slate-900 text-center sm:text-left tracking-[0.16px]">
+            Avocado superwallet streamlines Web3. Top up USDC gas tank and easily interact on any network. Simplify
+            gas
+            management
+            and focus on getting things done.
+          </p>
+          <div class="mt-auto flex sm:gap-x-[20px] gap-x-4">
+            <a href="#"
+              class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-blue-500/10 rounded-[14px] hover:scale-110 transition-all">
+              <span class="sm:text-base text-sm text-blue-500 leading-[20px]">Go to App</span>
+              <ion-icon name="arrow-redo-outline" class="text-blue-500"></ion-icon>
             </a>
           </div>
         </div>
 
-        <div class="card-1_divLeft w-full padding-all card-3">
-          <div class="card-1_divLeft-titleContainer">
-            <div class="titleContainer-logoDiv">
-              <img src="/img/KYLUC DELIGHT logo.png" class="logoDiv-logo" alt="website logo">
-            </div>
-            <h2 class="titleContainer-heading">Instadapp <br />
-              Lite</h2>
-          </div>
-          <p class="divLeft-description">
-            Access the best DeFi Strategy just like the pros! Simply deposit stETH and Instadapp Lite will put it to
-            work for you
-            using the most popular DeFi protocols.
-          </p>
-          <div class="divLeft-ctaContainer">
-            <a href="#" class="cta-btn-wrapper cardWrapper-2">
-              <span class="cta-text">Go to App</span>
-              <ion-icon name="arrow-redo-outline" class="cardWrapper-2-icon"></ion-icon>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="animatedSvg-section sectioning-card">
-      <h2 class="animated-title"><span class="blue">Instadapp</span> Empowers Users and Developers with Enhanced
-        <span class="blue">Capabilities to Take DeFi to the
+      <h2
+        class="sm:max-w-[859px] sm:mb-5 sm:text-[40px] text-2xl sm:leading-[56px] leading-[40px] text-center font-medium text-slate-900">
+        <span class="text-blue-500">Instadapp</span> Empowers Users and Developers with Enhanced
+        <span class="text-blue-500">Capabilities to Take DeFi to the
           Next Level</span>
       </h2>
     </section>
 
-    <section class="vertical-slides-section sectioning-card">
-      <div class="verticalSlides-wrapper">
-        <div class="wrapper-left">
-          <h2>Ultimate Defi Experience</h2>
-          <p>Instadapp brings users the most advanced features to make the most of DeFi. From Automation to Vaults,
+    <section class="w-full sm:pt-[100px] pt-[60px] flex flex-col items-center">
+      <div
+        class="w-full sm:pl-[60px] pl-5 sm:pr-[40px] pr-5 pt-[30px] sm:pt-0 pb-5 sm:pb-0 flex sm:flex-row flex-col gap-x-[0px] rounded-[40px] bg-slate-50 dark:bg-gray-855 max-h-[600px] overflow-y-hidden">
+        <div class="sm:w-6/12 w-full flex flex-col justify-center">
+          <h2
+            class="sm:w-11/12 w-full sm:text-6xl text-3xl sm:leading-[80px] leading-[40px] tracking-[0.6px] text-slate-900 font-medium text-center sm:text-left">
+            Ultimate Defi Experience</h2>
+          <p
+            class="sm:w-11/12 w-full tracking-[0.16px] sm:mt-[30px] mt-4 sm:text-base text-sm sm:leading-[30px] text-slate-900  text-center sm:text-left">
+            Instadapp brings users the most advanced features to make the most of DeFi. From Automation to Vaults,
             Instadapp offers
             users many solutions and features to satisfy all kinds of users.</p>
         </div>
 
-        <div class="wrapper-right">
-          <div class="slide-width">
-            <div class="slide-div">
+        <div class="sm:w-7/12 sm:mt-0 mt-[30px] w-full flex sm:gap-x-[30px] gap-x-4">
+          <div class="sm:w-1/3 w-1/2">
+            <div class="_marqueeSlider_1htck_3 h-[600px] flex flex-col slide-div">
               <div class="slideContent-animateSetting">
-                <div class="slideContent">
-                  <img src="/img/avocado-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Avocado</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white mb-[30px]">
+                  <img loading="lazy" src="/img/avocado-logo.webp" alt="Avocado"
+                    class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Avocado</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/rocket-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Flashloans</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/rocket-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Flashloans</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/swap-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Dex <br />Swaps</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/swap-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Dex
+                    <br />Swaps</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/eyes-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Account <br />Authority</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/eyes-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Account
+                    <br />Authority</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/avocado-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Avocado</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/avocado-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Avocado</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/rocket-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Flashloans</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/rocket-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Flashloans</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/swap-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Dex <br />Swaps</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/swap-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Dex
+                    <br />Swaps</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/eyes-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Account <br />Authority</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/eyes-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Account
+                    <br />Authority</span>
                 </div>
               </div>
             </div>
@@ -353,37 +419,57 @@
           <div class="slide-width">
             <div class="slide-div">
               <div class="slideContent-animateSetting middle">
-                <div class="slideContent">
-                  <img src="/img/bulls-eye-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>strategies</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
+                  <img src="/img/bulls-eye-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">strategies</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/desktop-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>DSA Platform</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/desktop-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">DSA
+                    Platform</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/brain-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Smart Wallet</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/brain-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Smart
+                    Wallet</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/dolar-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Refinancing</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/dolar-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Refinancing</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/bulls-eye-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>strategies</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/bulls-eye-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">strategies</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/desktop-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>DSA Platform</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/desktop-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">DSA
+                    Platform</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/brain-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Smart Wallet</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/brain-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Smart
+                    Wallet</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/dolar-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Refinancing</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/dolar-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Refinancing</span>
                 </div>
               </div>
             </div>
@@ -392,37 +478,55 @@
           <div class="slide-width">
             <div class="slide-div">
               <div class="slideContent-animateSetting">
-                <div class="slideContent">
-                  <img src="/img/money-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Vaults</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/money-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Vaults</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/robot-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Automation</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/robot-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Automation</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/bridge-at-night.webp" alt="Avocado" class="slideContent-img">
-                  <span>Bridging</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/bridge-at-night.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Bridging</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/bar-chart.webp" alt="Avocado" class="slideContent-img">
-                  <span>LP Rebalancing</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/bar-chart.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">LP
+                    Rebalancing</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/money-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Vaults</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/money-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Vaults</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/robot-logo.webp" alt="Avocado" class="slideContent-img">
-                  <span>Automation</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/robot-logo.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Automation</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/bridge-at-night.webp" alt="Avocado" class="slideContent-img">
-                  <span>Bridging</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/bridge-at-night.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Bridging</span>
                 </div>
-                <div class="slideContent">
-                  <img src="/img/bar-chart.webp" alt="Avocado" class="slideContent-img">
-                  <span>LP Rebalancing</span>
+                <div
+                  class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
+                  <img src="/img/bar-chart.webp" alt="Avocado" class="sm:w-[100px] w-[80px] sm:h-[100px]">
+                  <span
+                    class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">LP
+                    Rebalancing</span>
                 </div>
               </div>
             </div>
@@ -477,7 +581,7 @@
         class="w-full sm:p-[30px] pt-[30px] px-5 pb-5 rounded-[30px] bg-white flex flex-col sm:flex-row justify-between items-center">
         <div class="flex flex-col sm:flex-row items-center sm:gap-x-[20px] gap-y-[20px]">
           <ion-icon name="heart" class="w-[44px] h-[44px] sm:flex fill-blue-700 hidden"></ion-icon>
-          <h3 class="text-[26px] leading-[40px] font-medium text-slate-900">Joint the Governance
+          <h3 class="text-[26px] leading-[40px] font-medium text-slate-900">Join the Governance
             Community</h3>
         </div>
         <div class="flex mt-[30px] sm:mt-0 sm:w-auto w-full">
@@ -485,6 +589,82 @@
             class="sm:w-auto w-full h-[44px] pl-6 pr-2 py-3 rounded-[14px] bg-gray-900  flex items-center justify-center hover:scale-[1.10] transition-all">
             <span class="sm:text-base text-sm leading-5 mr-3 text-white">Governance Forum</span>
             <ion-icon name="arrow-redo-outline" class="text-white"></ion-icon></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full sm:pt-[100px] pt-[60px] flex flex-col justify-center items-center">
+      <div class="max-w-[680px]">
+        <h2 class="text-[40px] leading-[56px] text-slate-900 text-center font-medium">for all Kinds of DeFi Users</h2>
+        <p class="mt-5 text-base leading-[30px] tracking-[.01em]  text-slate-900  text-center">From
+          beginners to advanced users Instadapp creates products and protocols that delight and empower DeFi users.</p>
+      </div>
+      <div class="w-full mt-[60px] flex flex-col sm:gap-y-[60px] gap-y-[40px]">
+        <div
+          class="w-full sm:p-[30px] pt-[30px] px-5 pb-5 rounded-[40px] flex flex-col gap-y-[30px] bg-white dark:bg-gray-855 text-green-550 bg-green-550">
+          <div class="w-full flex sm:flex-row flex-col justify-between items-center gap-x-[30px]">
+            <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="sm:w-[140px] w-[60px] sm:h-[140px] h-[60px]">
+            <div class="w-full flex flex-col">
+              <div class="flex sm:justify-between justify-center">
+                <div class="flex flex-col">
+                  <span
+                    class="sm:mt-0 mt-5 sm:text-lg text-xs leading-5 tracking-wide uppercase text-center sm:text-left text-green-600">For
+                    Everyone</span>
+                  <h2
+                    class="mt-1 sm:text-6xl text-3xl sm:leading-[70px] leading-[40px] tracking-[0.6px] font-medium text-slate-900 ">
+                    Avocado</h2>
+                </div>
+                <a href="https://avocado.instadapp.io"
+                  class="h-[54px] py-[6px] pl-[10px] pr-[10px] rounded-[20px] sm:flex hidden items-center justify-center hover:scale-[1.10] transition-all text-green-550 bg-green-600">
+                  <span class="text-xl leading-[30px] text-white">go to app</span><ion-icon name="arrow-redo-outline"
+                    class="text-white ml-[5px]"></ion-icon></a>
+              </div>
+              <p
+                class="sm:mt-2.5 mt-4 sm:text-lg text-sm leading-[30px] tracking-wide text-slate-400 text-center sm:text-left">
+                Avocado is your all in one web3 superwallet!
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex hidden gap-x-4">
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">USDC Gas</span>
+            </div>
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">Authorities</span>
+            </div>
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">Swap</span>
+            </div>
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">Bridge</span>
+            </div>
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">Add custom Tokens</span>
+            </div>
+            <div
+              class="text-green-600 bg-green-600 h-[40px] py-2.5 px-[18px] rounded-[40px] flex items-center gap-x-[11px] bg-opacity-10">
+              <i class="fa-solid fa-gas-pump text-base"></i>
+              <span class="text-base leading-5">Deploy/Upgrade</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full sm:p-[30px] pt-[30px] px-5 pb-5 rounded-[40px] flex flex-col gap-y-[30px] bg-white dark:bg-gray-855 text-blue-500 ">
+        </div>
+
+        <div
+          class="w-full sm:p-[30px] pt-[30px] px-5 pb-5 rounded-[40px] flex flex-col gap-y-[30px] bg-white dark:bg-gray-855 text-blue-500  outline outline-[10px] outline-inherit shadow-[0_0_84px_rgba(59,130,246,0.4)] dark:shadow-[0_0_84px_rgba(59,130,246,0.3)">
         </div>
       </div>
     </section>
