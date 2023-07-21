@@ -20,46 +20,71 @@
           class="w-full sm:w-auto flex sm:flex-row flex-row-reverse items-center justify-between gap-x-[38px] relative">
           <div class="flex flex-row-reverse gap-x-5">
             <div>
-              <button type="button" class="relative flex items-center justify-center !focus:outline-none !outline-none"
-                aria-expanded="false">
-                <div
-                  class="w-[44px] h-[44px] p-3.5 rounded-[14px] flex items-center  bg-slate-50 cursor-pointer relative !outline-none z-50">
-                  <div class="w-full">
-                    <span class="w-5 h-1 rounded-[10px] block bg-slate-400 transition-all mb-1"></span>
-                    <span class="w-5 h-1 rounded-[10px] block bg-slate-400 transition-all mb-1"></span>
-                    <span class="w-5 h-1 rounded-[10px] block bg-slate-400 transition-all"></span>
-                  </div>
-                </div>
-              </button>
+              <div class="bg-slate-50 rounded-[14px] p-3.5">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                  <div class="bars" id="bar1"></div>
+                  <div class="bars" id="bar2"></div>
+                  <div class="bars" id="bar3"></div>
+                </label>
+              </div>
+
             </div>
 
             <div class="items-center gap-x-7 sm:hidden flex">
-              <button
-                class="inline-flex items-center justify-center w-9 h-9 relative hover:rotate-90 dark:hover:rotate-45 transition-all z-50">
-                <span class="absolute">
-                  <ion-icon name="moon-outline" class="w-7 h-7"></ion-icon>
-                </span></button>
+              <label class="text-[17px] w-16 h-8 relative sm:hidden flex">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                      <circle r="5" cy="12" cx="12"></circle>
+                      <path
+                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                      </path>
+                    </g>
+                  </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                    </path>
+                  </svg></span>
+                <input type="checkbox" class="opacity-0 w-0 h-0">
+                <span
+                  class="slider absolute cursor-pointer top-0 bottom-0 left-0 right-0 transition-all rounded-[30px] duration-[0.4s] bg-[#73c0fc]"></span>
+              </label>
             </div>
           </div>
           <div class="flex items-center gap-x-7 z-50">
             <img src="/img/logo-philips.png" alt="logo" class="logo">
-            <button
-              class="inline-flex items-center justify-center w-9 h-9 relative hover:rotate-90 dark:hover:rotate-45 transition-all z-50 sm:flex hidden">
-              <span class="absolute"><ion-icon name="moon-outline" class="w-7 h-7"></ion-icon></span>
-            </button>
+            <label class="relative h-8 w-16 text-[17px] sm:flex hidden">
+              <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g fill="#ffd43b">
+                    <circle r="5" cy="12" cx="12"></circle>
+                    <path
+                      d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                    </path>
+                  </g>
+                </svg></span>
+              <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                  </path>
+                </svg></span>
+              <input type="checkbox" class="opacity-0 w-0 h-0">
+              <span
+                class="slider absolute cursor-pointer top-0 bottom-0 left-0 right-0 transition-all rounded-[30px] duration-[0.4s] bg-[#73c0fc]"></span>
+            </label>
           </div>
         </div>
         <nav class="sm:flex hidden items-center gap-x-9">
-          <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer">
+          <a class="group text-slate-400  hover:text-[#2E0449] py-2.5 px-4 bg-transparent cursor-pointer">
             <span class="text-base leading-5 transition-all">Avocado</span>
           </a>
-          <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer"><span
+          <a class="group text-slate-400  hover:text-[#2E0449] py-2.5 px-4 bg-transparent cursor-pointer"><span
               class="text-base leading-5 transition-all">Instadapp Lite</span></a>
-          <a class="group text-slate-400  hover:text-slate-900 py-2.5 px-4 bg-transparent cursor-pointer"><span
+          <a class="group text-slate-400  hover:text-[#2E0449] py-2.5 px-4 bg-transparent cursor-pointer"><span
               class="text-base leading-5 transition-all">Instadapp PRO</span></a>
         </nav>
         <a
-          class="router-link-active router-link-exact-active px-6 py-3 rounded-[14px] relative  bg-gray-900 text-white text-base sm:flex hidden leading-5 cursor-pointer transition-transform dark:hover:scale-110 hover:scale-110 z-50">
+          class="router-link-active router-link-exact-active px-6 py-3 rounded-[14px] relative  bg-[#2E0449] text-white text-base sm:flex hidden leading-5 cursor-pointer transition-transform dark:hover:scale-110 hover:scale-110 z-50">
           View Apps
         </a>
       </div>
@@ -70,15 +95,15 @@
       <section class="w-full sm:mt-10 mt-[50px] flex sm:flex-row flex-col">
         <div class="sm:w-7/12 w-full flex flex-col justify-center">
           <h1
-            class="sm:text-[70px] tracking-[0.7px] text-4xl sm:leading-[90px] leading-[50px] font-medium text-slate-900  text-center sm:text-left">
+            class="sm:text-[70px] tracking-[0.7px] text-4xl sm:leading-[90px] leading-[50px] font-medium text-[#2E0449]  text-center sm:text-left">
             Everything DeFi</h1>
           <p
-            class="mt-6 tracking-[0.2px] sm:text-xl text-sm sm:text-left text-center sm:leading-[34px] leading-[30px] text-slate-900 ">
+            class="mt-6 tracking-[0.2px] sm:text-xl text-sm sm:text-left text-center sm:leading-[34px] leading-[30px] text-[#2E0449] ">
             Unlock the full potential of DeFi with Instadapp. The ultimate hub for
             Everything web3. Simplify your DeFi journey and enjoy a safer, more accessible experience.</p>
           <div class="mt-10 flex sm:flex-row flex-col gap-y-4 sm:gap-x-[30px]">
             <a
-              class="h-[44px] sm:w-fit w-full py-3 px-6 rounded-[14px] bg-gray-900  flex items-center hover:scale-[1.10] transition-all cursor-pointer">
+              class="h-[44px] sm:w-fit w-full py-3 px-6 rounded-[14px] bg-[#2E0449]  flex items-center hover:scale-[1.10] transition-all cursor-pointer">
               <span class="sm:text-base text-sm leading-5 mx-auto text-white ">Learn More</span>
             </a>
             <div
@@ -87,7 +112,7 @@
               <span class="py-[6px] px-[11px] rounded-[20px] bg-slate-100   text-base leading-5">
                 <div class="inline-flex items-center leading-6">
                   <span class="mb-px mr-0.5">$</span>
-                  <span class="odometer odometer-auto-theme">2,021,768,818</span>
+                  <span class="odometer text-[#2E0449] odometer-auto-theme">2,021,768,818</span>
                 </div>
               </span>
             </div>
@@ -104,67 +129,67 @@
             <div class="slides-wrapper_settings">
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/polygon-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Polygon</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Polygon</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/polygonzkevm-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Polygon zKEVM</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Polygon zKEVM</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/arbitrum-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Arbitrum</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Arbitrum</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/avalanche-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Avalanche</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Avalanche</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/bnb-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">BNB</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">BNB</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/ethereum-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Ethereum</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Ethereum</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/gnosis-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Gnosis</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Gnosis</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/optimism-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Optimism</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Optimism</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/polygon-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Polygon</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Polygon</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/polygonzkevm-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Polygon zKEVM</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Polygon zKEVM</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/arbitrum-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Arbitrum</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Arbitrum</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/avalanche-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Avalanche</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Avalanche</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/bnb-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">BNB</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">BNB</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/ethereum-logo.png" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Ethereum</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Ethereum</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/gnosis-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Gnosis</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Gnosis</span>
               </div>
               <div class="!min-w-max flex items-center gap-x-[16px] object-contain mr-[60px]">
                 <img src="/img/optimism-logo.webp" alt="logo" class="w-[36px]" loading="lazy">
-                <span class="text-xl leading-[30px] tracking-wide text-slate-900 ">Optimism</span>
+                <span class="text-xl leading-[30px] tracking-wide text-[#2E0449] ">Optimism</span>
               </div>
 
 
@@ -176,11 +201,11 @@
 
       <section class="w-full flex flex-col gap-y-[40px] scroll-mt-24">
         <div
-          class="w-full sm:px-10 px-5 sm:py-10 py-5 pt-[30px] sm:pt-10 flex sm:flex-row flex-col rounded-[40px] bg-green-500">
+          class="w-full sm:px-10 px-5 sm:py-10 py-5 pt-[30px] sm:pt-10 flex sm:flex-row flex-col rounded-[40px] bg-gradient-to-b from-[#8F5DBC] to-[#6A54AC]">
           <div class="sm:w-1/2 w-full flex flex-col">
             <div class="flex flex-col sm:flex-row gap-x-[15px] items-center">
               <div class="sm:w-[200px] sm:h-[100px] w-[90px] h-[90px]">
-                <img src="/img/KYLUC DELIGHT logo-white.png" class="sm:flex" alt="website logo">
+                <img src="/img/Frame.svg" class="sm:flex" alt="website logo">
               </div>
               <h2
                 class="sm:mt-0 mt-4 sm:text-[40px] tracking-[0.4px] text-3xl sm:leading-[48px] leading-[40px] text-white font-medium text-center sm:text-left">
@@ -196,7 +221,7 @@
             <div class="sm:mt-10 mt-[30px] flex sm:gap-x-[20px] gap-x-4">
               <a href="#"
                 class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
-                <span class="sm:text-base text-sm text-slate-900 leading-5">Learn More</span>
+                <span class="sm:text-base text-sm text-[#2E0449] leading-5">Learn More</span>
               </a>
               <a href="#"
                 class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white/20 rounded-[14px] hover:scale-110 transition-all">
@@ -226,10 +251,10 @@
         </div>
         <div class="w-full flex sm:flex-row flex-col sm:gap-x-[40px] gap-y-[40px]">
           <div
-            class="sm:w-1/2 w-full sm:p-10 sm:pt-10 pt-[30px] sm:px-10 px-5 pb-5 sm:pb-10 flex flex-col bg-blue-700 rounded-[40px]">
+            class="sm:w-1/2 w-full sm:p-10 sm:pt-10 pt-[30px] sm:px-10 px-5 pb-5 sm:pb-10 flex flex-col bg-gradient-to-b from-[#EF884D] to-[#EB4814] rounded-[40px]">
             <div class="flex flex-col sm:flex-row gap-x-[26px] items-center">
               <div class="sm:w-[100px] sm:h-[100px] w-[90px] h-[90px]">
-                <img src="/img/KYLUC DELIGHT logo-white.png" class="sm:flex" alt="website logo">
+                <img src="/img/Frame-2.svg" class="sm:flex" alt="website logo">
               </div>
 
               <h2
@@ -246,7 +271,7 @@
             <div class="sm:mt-10 mt-[30px] flex sm:gap-x-[20px] gap-x-4">
               <a href="#"
                 class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
-                <span class="sm:text-base text-sm text-slate-900 leading-[20px]">Learn More</span>
+                <span class="sm:text-base text-sm text-[#2E0449] leading-[20px]">Learn More</span>
               </a>
               <a href="#"
                 class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-white/20 rounded-[14px] hover:scale-110 transition-all">
@@ -259,15 +284,15 @@
             class="sm:w-1/2 w-full sm:p-10 sm:pt-10 pt-[30px] sm:px-10 px-5 pb-5 sm:pb-10 flex flex-col bg-white rounded-[40px]">
             <div class="flex flex-col sm:flex-row gap-x-[26px] items-center">
               <div class="sm:w-[100px] sm:h-[100px] w-[90px] h-[90px]">
-                <img src="/img/KYLUC DELIGHT logo.png" class="sm:flex" alt="website logo">
+                <img src="/img/Frame-3.svg" class="sm:flex" alt="website logo">
               </div>
 
               <h2
-                class="sm:mt-0 mt-4 sm:text-[40px] text-3xl sm:leading-[48px] leading-[40px] tracking-wide text-slate-900 font-medium text-center sm:text-left">
-                Instadapp <br /> Pro</h2>
+                class="sm:mt-0 mt-4 sm:text-[40px] text-3xl sm:leading-[48px] leading-[40px] tracking-wide text-[#2E0449] font-medium text-center sm:text-left">
+                Instadapp <br /> Lite</h2>
             </div>
             <p
-              class="sm:mt-5 mt-4 sm:text-base text-sm sm:leading-[30px] text-slate-900 text-center sm:text-left tracking-[0.16px]">
+              class="sm:mt-5 mt-4 sm:text-base text-sm sm:leading-[30px] text-[#2E0449] text-center sm:text-left tracking-[0.16px]">
               Avocado superwallet streamlines Web3. Top up USDC gas tank and easily interact on any network. Simplify
               gas
               management
@@ -275,9 +300,9 @@
             </p>
             <div class="mt-auto flex sm:gap-x-[20px] gap-x-4">
               <a href="#"
-                class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-blue-500/10 rounded-[14px] hover:scale-110 transition-all">
-                <span class="sm:text-base text-sm text-blue-500 leading-[20px]">Go to App</span>
-                <ion-icon name="arrow-redo-outline" class="text-blue-500"></ion-icon>
+                class="h-[44px] sm:w-auto w-[140px] sm:px-6 px-2 py-3 flex items-center justify-center bg-[#ef884d3d] rounded-[14px] hover:scale-110 transition-all">
+                <span class="sm:text-base text-sm text-[#EF884D] leading-[20px]">Go to App</span>
+                <ion-icon name="arrow-redo-outline" class="text-[#EF884D]"></ion-icon>
               </a>
             </div>
           </div>
@@ -287,9 +312,9 @@
 
       <section class="w-full sm:pt-[100px] pt-[60px] flex flex-col items-center">
         <h2
-          class="sm:max-w-[859px] sm:mb-5 sm:text-[40px] text-2xl sm:leading-[56px] leading-[40px] text-center font-medium text-slate-900">
-          <span class="text-blue-500">Instadapp</span> Empowers Users and Developers with Enhanced
-          <span class="text-blue-500">Capabilities to Take DeFi to the
+          class="sm:max-w-[859px] sm:mb-5 sm:text-[40px] text-2xl sm:leading-[56px] leading-[40px] text-center font-medium text-[#2E0449]">
+          <span class="text-[#EF884D]">Instadapp</span> Empowers Users and Developers with Enhanced
+          <span class="text-[#EF884D]">Capabilities to Take DeFi to the
             Next Level</span>
         </h2>
       </section>
@@ -299,10 +324,10 @@
           class="w-full sm:pl-[60px] pl-5 sm:pr-[40px] pr-5 pt-[30px] sm:pt-0 pb-5 sm:pb-0 flex sm:flex-row flex-col gap-x-[0px] rounded-[40px] bg-slate-50 dark:bg-gray-855 max-h-[600px] overflow-hidden">
           <div class="sm:w-6/12 w-full flex flex-col justify-center">
             <h2
-              class="sm:w-11/12 w-full sm:text-6xl text-3xl sm:leading-[80px] leading-[40px] tracking-[0.6px] text-slate-900 font-medium text-center sm:text-left">
+              class="sm:w-11/12 w-full sm:text-6xl text-3xl sm:leading-[80px] leading-[40px] tracking-[0.6px] text-[#2E0449] font-medium text-center sm:text-left">
               Ultimate Defi Experience</h2>
             <p
-              class="sm:w-11/12 w-full tracking-[0.16px] sm:mt-[30px] mt-4 sm:text-base text-sm sm:leading-[30px] text-slate-900  text-center sm:text-left">
+              class="sm:w-11/12 w-full tracking-[0.16px] sm:mt-[30px] mt-4 sm:text-base text-sm sm:leading-[30px] text-[#2E0449]  text-center sm:text-left">
               Instadapp brings users the most advanced features to make the most of DeFi. From Automation to Vaults,
               Instadapp offers
               users many solutions and features to satisfy all kinds of users.</p>
@@ -317,21 +342,21 @@
                     <img loading="lazy" src="/img/avocado-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Avocado</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Avocado</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/rocket-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Flashloans</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Flashloans</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/swap-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Dex
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Dex
                       <br />Swaps</span>
                   </div>
                   <div
@@ -339,7 +364,7 @@
                     <img loading="lazy" src="/img/eyes-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Account
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Account
                       <br />Authority</span>
                   </div>
                   <div
@@ -347,21 +372,21 @@
                     <img loading="lazy" src="/img/avocado-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Avocado</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Avocado</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/rocket-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Flashloans</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Flashloans</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/swap-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Dex
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Dex
                       <br />Swaps</span>
                   </div>
                   <div
@@ -369,7 +394,7 @@
                     <img loading="lazy" src="/img/eyes-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Account
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Account
                       <br />Authority</span>
                   </div>
                   <div
@@ -377,21 +402,21 @@
                     <img loading="lazy" src="/img/avocado-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Avocado</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Avocado</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/rocket-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Flashloans</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Flashloans</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white  mb-[30px]">
                     <img loading="lazy" src="/img/swap-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Dex
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Dex
                       <br />Swaps</span>
                   </div>
                   <div
@@ -399,7 +424,7 @@
                     <img loading="lazy" src="/img/eyes-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Account
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Account
                       <br />Authority</span>
                   </div>
                 </div>
@@ -414,14 +439,14 @@
                     <img loading="lazy" src="/img/bulls-eye-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">strategies</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">strategies</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/desktop-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">DSA
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">DSA
                       Platform</span>
                   </div>
                   <div
@@ -429,7 +454,7 @@
                     <img loading="lazy" src="/img/brain-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Smart
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Smart
                       Wallet</span>
                   </div>
                   <div
@@ -437,21 +462,21 @@
                     <img loading="lazy" src="/img/dolar-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Refinancing</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Refinancing</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bulls-eye-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">strategies</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">strategies</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/desktop-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">DSA
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">DSA
                       Platform</span>
                   </div>
                   <div
@@ -459,7 +484,7 @@
                     <img loading="lazy" src="/img/brain-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Smart
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Smart
                       Wallet</span>
                   </div>
                   <div
@@ -467,21 +492,21 @@
                     <img loading="lazy" src="/img/dolar-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Refinancing</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Refinancing</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bulls-eye-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">strategies</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">strategies</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/desktop-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">DSA
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">DSA
                       Platform</span>
                   </div>
                   <div
@@ -489,7 +514,7 @@
                     <img loading="lazy" src="/img/brain-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Smart
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Smart
                       Wallet</span>
                   </div>
 
@@ -506,28 +531,28 @@
                     <img loading="lazy" src="/img/money-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Vaults</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Vaults</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/robot-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Automation</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Automation</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bridge-at-night.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Bridging</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Bridging</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bar-chart.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">LP
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">LP
                       Rebalancing</span>
                   </div>
                   <div
@@ -535,28 +560,28 @@
                     <img loading="lazy" src="/img/money-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Vaults</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Vaults</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/robot-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Automation</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Automation</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bridge-at-night.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Bridging</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Bridging</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bar-chart.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">LP
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">LP
                       Rebalancing</span>
                   </div>
                   <div
@@ -564,28 +589,28 @@
                     <img loading="lazy" src="/img/money-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Vaults</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Vaults</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/robot-logo.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Automation</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Automation</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bridge-at-night.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">Bridging</span>
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">Bridging</span>
                   </div>
                   <div
                     class="sm:max-w-[180px] max-w-[140px] pt-[40px] px-4 pb-4 rounded-[30px] flex flex-col items-center bg-white   mb-[30px]">
                     <img loading="lazy" src="/img/bar-chart.webp" alt="Avocado"
                       class="sm:w-[100px] w-[80px] sm:h-[100px]">
                     <span
-                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-slate-900  bg-slate-100 dark:bg-gray-855">LP
+                      class="sm:w-[148px] w-[120px] sm:mt-10 mt-5 py-[10px] px-[16px] flex items-center justify-center text-center sm:text-lg text-xs sm:leading-[30px] leading-5 rounded-[20px] text-[#2E0449]  bg-slate-100 dark:bg-gray-855">LP
                       Rebalancing</span>
                   </div>
                 </div>
@@ -597,20 +622,20 @@
 
       <section class="w-full sm:pt-[100px] pt-[60px] flex flex-col gap-y-10 justify-center items-center">
         <div class="flex flex-col items-center">
-          <img src="/img/KYLUC DELIGHT logo.png" class="sm:flex hidden w-64 h-auto" alt="logo">
-          <img src="/img/KYLUC DELIGHT logo.png" class="sm:hidden flex w-32 h-auto" alt="logo">
+          <img src="/img/Frame-2.svg" class="sm:flex hidden w-64 h-auto" alt="logo">
+          <img src="/img/Frame-3.svg" class="sm:hidden flex w-32 h-auto" alt="logo">
           <h2
-            class="w-10/12 sm:mt-10 mt-5 sm:text-[40px] text-2xl sm:leading-[56px] leading-[40px] font-medium text-slate-900 text-center">
+            class="w-10/12 sm:mt-10 mt-5 sm:text-[40px] text-2xl sm:leading-[56px] leading-[40px] font-medium text-[#2E0449] text-center">
             Instadapp is Governed by INST Tokenholders
           </h2>
         </div>
         <div class="w-full flex flex-col sm:flex-row sm:gap-x-[40px] gap-[40px]">
           <div
             class="sm:w-1/2 w-full sm:p-[30px] px-5 py-[30px] rounded-[30px] flex sm:flex-row flex-col sm:items-start items-center sm:gap-[15px] gap-[30px] bg-white ">
-            <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="w-[36px] h-[36px] sm:flex hidden">
-            <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="w-[60px] h-[60px] sm:hidden flex">
+            <img src="/img/Frame-3.svg" alt="logo" class="w-[36px] h-[36px] sm:flex hidden">
+            <img src="/img/Frame-3.svg" alt="logo" class="w-[60px] h-[60px] sm:hidden flex">
             <div class="flex flex-col items-center sm:items-start">
-              <h3 class="sm:text-[26px] text-2xl leading-[40px] font-medium text-slate-900  text-center sm:text-left">
+              <h3 class="sm:text-[26px] text-2xl leading-[40px] font-medium text-[#2E0449]  text-center sm:text-left">
                 On-Chain Voting</h3>
               <p
                 class="w-10/12 mt-2 sm:text-base text-xl sm:leading-[30px] tracking-[0.16px] text-slate-400 text-center sm:text-left">
@@ -618,7 +643,7 @@
             </div>
             <a href=""
               class="h-[44px] sm:w-auto w-[140px] sm:pl-6 pr-2 pl-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
-              <span class="sm:text-base mr-3 text-sm text-slate-900 leading-5">Atlas</span>
+              <span class="sm:text-base mr-3 text-sm text-[#2E0449] leading-5">Atlas</span>
               <ion-icon name="arrow-redo-outline" class="dark:text-slate-900"></ion-icon>
             </a>
           </div>
@@ -627,7 +652,7 @@
             <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="w-[36px] h-[36px] sm:flex hidden">
             <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="w-[60px] h-[60px] sm:hidden flex">
             <div class="flex flex-col items-center sm:items-start">
-              <h3 class="sm:text-[26px] text-2xl leading-[40px] font-medium text-slate-900  text-center sm:text-left">
+              <h3 class="sm:text-[26px] text-2xl leading-[40px] font-medium text-[#2E0449]  text-center sm:text-left">
                 Off Chain Voting</h3>
               <p
                 class="w-10/12 mt-2 sm:text-base text-sm sm:leading-[30px] tracking-[0.16px] text-slate-400 text-center sm:text-left">
@@ -635,7 +660,7 @@
             </div>
             <a href=""
               class="h-[44px] sm:w-auto w-[140px] sm:pl-6 pr-2 pl-2 py-3 flex items-center justify-center bg-white rounded-[14px] hover:scale-110 transition-all">
-              <span class="sm:text-base mr-3 text-sm text-slate-900 leading-5">Snapshot</span>
+              <span class="sm:text-base mr-3 text-sm text-[#2E0449] leading-5">Snapshot</span>
               <ion-icon name="arrow-redo-outline" class="dark:text-slate-900"></ion-icon>
             </a>
           </div>
@@ -645,12 +670,12 @@
           <div class="flex flex-col sm:flex-row items-center sm:gap-x-[20px] gap-y-[20px]">
             <img loading="lazy" src="/img/blue-heart.webp" alt="blue heart" class="w-[44px] h-[44px] sm:flex hidden">
             <img loading="lazy" src="/img/blue-heart.webp" alt="blue heart" class="w-[52px] h-[52px] sm:hidden flex">
-            <h3 class="text-[26px] leading-[40px] font-medium text-slate-900">Join the Governance
+            <h3 class="text-[26px] leading-[40px] font-medium text-[#2E0449]">Join the Governance
               Community</h3>
           </div>
           <div class="flex mt-[30px] sm:mt-0 sm:w-auto w-full">
             <a href=""
-              class="sm:w-auto w-full h-[44px] pl-6 pr-2 py-3 rounded-[14px] bg-gray-900  flex items-center justify-center hover:scale-[1.10] transition-all">
+              class="sm:w-auto w-full h-[44px] pl-6 pr-2 py-3 rounded-[14px] bg-[#2E0449]  flex items-center justify-center hover:scale-[1.10] transition-all">
               <span class="sm:text-base text-sm leading-5 mr-3 text-white">Governance Forum</span>
               <ion-icon name="arrow-redo-outline" class="text-white"></ion-icon></a>
           </div>
@@ -659,8 +684,8 @@
 
       <section class="w-full sm:pt-[100px] pt-[60px] flex flex-col justify-center items-center">
         <div class="max-w-[680px]">
-          <h2 class="text-[40px] leading-[56px] text-slate-900 text-center font-medium">for all Kinds of DeFi Users</h2>
-          <p class="mt-5 text-base leading-[30px] tracking-[.01em]  text-slate-900  text-center">From
+          <h2 class="text-[40px] leading-[56px] text-[#2E0449] text-center font-medium">for all Kinds of DeFi Users</h2>
+          <p class="mt-5 text-base leading-[30px] tracking-[.01em]  text-[#2E0449]  text-center">From
             beginners to advanced users Instadapp creates products and protocols that delight and empower DeFi users.
           </p>
         </div>
@@ -668,7 +693,7 @@
           <div
             class="w-full sm:p-[30px] pt-[30px] px-5 pb-5 rounded-[40px] flex flex-col gap-y-[30px] bg-white dark:bg-gray-855 text-green-550 bg-green-550">
             <div class="w-full flex sm:flex-row flex-col justify-between items-center gap-x-[30px]">
-              <img src="/img/KYLUC DELIGHT logo.png" alt="logo" class="sm:w-[140px] w-[60px] sm:h-[140px] h-[60px]">
+              <img src="/img/avocado-logo-green.png" alt="logo" class="sm:w-[140px] w-[60px] sm:h-[140px] h-[60px]">
               <div class="w-full flex flex-col">
                 <div class="flex sm:justify-between justify-center">
                   <div class="flex flex-col">
